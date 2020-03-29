@@ -6,7 +6,7 @@
         echo "Enter the Email:"
         read email
 
-emailPattern="^[a-z]{3,}([.][a-z]+)[@][a-z]+[.][a-z]{2}"
+emailPattern="^[a-z]{3,}[a-z]+[@][bridgelabz]+[.][a-z]{2}"
 
         if [[ $email =~ $emailPattern ]];
         then
