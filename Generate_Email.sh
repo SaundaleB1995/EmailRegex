@@ -6,8 +6,7 @@
         echo "Enter the Email:"
         read email
 
-	emailPattern="^[a-zA-Z0-9]+([.|_|+|-][a-zA-Z]+)[@][a-z]+[.][a-z]{2}[.][]a-z]{2}>
-
+	 emailPattern="^([a-zA-Z]{3,}([.|_|+|-]?[a-zA-Z0-9]+)?[@][a-zA-Z0-9]+[.][a-zA-Z]{2,3}([.]?[a-zA-Z]{2,3})?)$"
         if [[ $email =~ $emailPattern ]];
         then
                 echo CORRECT;
